@@ -1,0 +1,21 @@
+<%@ Page Language="C#"  AutoEventWireup="true" CodeFile="BatchCardIssuanceRequest.aspx.cs" Inherits="BatchIssuance_BatchCardIssuanceRequest" %>
+<%@ Register assembly="AppZoneUI.Framework" namespace="AppZoneUI.Framework" tagprefix="cc1" %>
+<%@ Register assembly="Ext.Net" namespace="Ext.Net" tagprefix="ext" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <ext:ResourceManager runat="server" ID="scriptManager1" />
+
+    <cc1:EntityUIControl ID="EntityUIControl1" runat="server" 
+        UIType="ViaCardUI.BatchCardIssuanceRequestUI, ViaCardUI" >
+    </cc1:EntityUIControl>
+   </div>
+    </form>
+</body>
+</html>

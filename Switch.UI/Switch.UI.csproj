@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8347C25A-0FC4-4765-937D-D15A80CE0352}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Switch.UI</RootNamespace>
+    <AssemblyName>Switch.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Christian\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\Christian\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AppZoneUI.Framework">
+      <HintPath>..\Christian\AppZoneUI.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Coolite.Ext.Web">
+      <HintPath>..\Christian\Coolite.Ext.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Coolite.Utilities">
+      <HintPath>..\Christian\Coolite.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="CuttingEdge.ServiceLocation">
+      <HintPath>..\Christian\CuttingEdge.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net">
+      <HintPath>..\Christian\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities">
+      <HintPath>..\Christian\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Christian\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.3.1.6.186\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.Net4">
+      <HintPath>..\packages\structuremap.3.1.6.186\lib\net40\StructureMap.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\Christian\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChannelsUI\ChannelsCreate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelsUI\ChannelsList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelsUI\ChannelsUIEdit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelsUI\ChannelsUIUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FeesUI\AddFees.cs" />
+    <Compile Include="FeesUI\EditFees.cs" />
+    <Compile Include="FeesUI\FeesList.cs" />
+    <Compile Include="FeesUI\ViewFees.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RouteUI\CreateRoute.cs" />
+    <Compile Include="RouteUI\EditRoute.cs" />
+    <Compile Include="RouteUI\ListRoute.cs" />
+    <Compile Include="RouteUI\ViewRoute.cs" />
+    <Compile Include="SchemeUI\AddScheme.cs" />
+    <Compile Include="SchemeUI\EditScheme.cs" />
+    <Compile Include="SchemeUI\ListSchemes.cs" />
+    <Compile Include="SchemeUI\ViewScheme.cs" />
+    <Compile Include="ServiceBootrapper.cs" />
+    <Compile Include="SinkNodes\AddSinkNodes.cs" />
+    <Compile Include="SinkNodes\EditSinkNode.cs" />
+    <Compile Include="SinkNodes\ListSinkNodes.cs" />
+    <Compile Include="SourceNodeUI\AddSourceNode.cs" />
+    <Compile Include="SourceNodeUI\EditSourceNode.cs" />
+    <Compile Include="SourceNodeUI\ListSourceNode.cs" />
+    <Compile Include="Starter.cs" />
+    <Compile Include="TransLogUI\ViewTransLog.cs" />
+    <Compile Include="TransTypeUI\AddTransType.cs" />
+    <Compile Include="TransTypeUI\EditTransType.cs" />
+    <Compile Include="TransTypeUI\ListTransType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\classicMovies\Project.Core\Project.Core.csproj">
+      <Project>{39d4587a-d73f-4dbd-887d-14ae92b058e9}</Project>
+      <Name>Project.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Switch.Core\Switch.Core.csproj">
+      <Project>{634981ea-d9c2-4e99-90b9-0ca4c822604c}</Project>
+      <Name>Switch.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Switch.Data\Switch.Data.csproj">
+      <Project>{c6452a3e-4693-4e3d-84a0-a37958beda31}</Project>
+      <Name>Switch.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Switch.Service\Switch.Service.csproj">
+      <Project>{a9d24a46-9123-4ddc-9264-b43199273334}</Project>
+      <Name>Switch.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Switch.UI.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

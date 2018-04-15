@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6452A3E-4693-4E3D-84A0-A37958BEDA31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Switch.Data</RootNamespace>
+    <AssemblyName>Switch.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\Bin\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\Bin\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Bin\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\Bin\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Linq">
+      <HintPath>..\Bin\NHibernate.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concrete\SessionManager.cs" />
+    <Compile Include="Interface\IInterface.cs" />
+    <Compile Include="Migrations\201509091539051_initial.cs" />
+    <Compile Include="Migrations\201509091539051_initial.Designer.cs">
+      <DependentUpon>201509091539051_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509091545330_initial2.cs" />
+    <Compile Include="Migrations\201509091545330_initial2.Designer.cs">
+      <DependentUpon>201509091545330_initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509100949046_initial3.cs" />
+    <Compile Include="Migrations\201509100949046_initial3.Designer.cs">
+      <DependentUpon>201509100949046_initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509100959365_initial31.cs" />
+    <Compile Include="Migrations\201509100959365_initial31.Designer.cs">
+      <DependentUpon>201509100959365_initial31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509101007350_initial4.cs" />
+    <Compile Include="Migrations\201509101007350_initial4.Designer.cs">
+      <DependentUpon>201509101007350_initial4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509101008134_initial32.cs" />
+    <Compile Include="Migrations\201509101008134_initial32.Designer.cs">
+      <DependentUpon>201509101008134_initial32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509101009036_initial311.cs" />
+    <Compile Include="Migrations\201509101009036_initial311.Designer.cs">
+      <DependentUpon>201509101009036_initial311.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509281205251_data-changes.cs" />
+    <Compile Include="Migrations\201509281205251_data-changes.Designer.cs">
+      <DependentUpon>201509281205251_data-changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509281625216_data-changes-sinknode.cs" />
+    <Compile Include="Migrations\201509281625216_data-changes-sinknode.Designer.cs">
+      <DependentUpon>201509281625216_data-changes-sinknode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509290905490_data-changes-routeupdate.cs" />
+    <Compile Include="Migrations\201509290905490_data-changes-routeupdate.Designer.cs">
+      <DependentUpon>201509290905490_data-changes-routeupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509291114241_initial312.cs" />
+    <Compile Include="Migrations\201509291114241_initial312.Designer.cs">
+      <DependentUpon>201509291114241_initial312.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Channels.cs" />
+    <Compile Include="Models\Fees.cs" />
+    <Compile Include="Models\NodeType.cs" />
+    <Compile Include="Models\Routes.cs" />
+    <Compile Include="Models\Schemes.cs" />
+    <Compile Include="Models\SinkNode.cs" />
+    <Compile Include="Models\SourceNode.cs" />
+    <Compile Include="Models\TransactionType.cs" />
+    <Compile Include="Models\TransLogs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwitchContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\Switch.Data.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201509091539051_initial.resx">
+      <DependentUpon>201509091539051_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509091545330_initial2.resx">
+      <DependentUpon>201509091545330_initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509100949046_initial3.resx">
+      <DependentUpon>201509100949046_initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509100959365_initial31.resx">
+      <DependentUpon>201509100959365_initial31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509101007350_initial4.resx">
+      <DependentUpon>201509101007350_initial4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509101008134_initial32.resx">
+      <DependentUpon>201509101008134_initial32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509101009036_initial311.resx">
+      <DependentUpon>201509101009036_initial311.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509281205251_data-changes.resx">
+      <DependentUpon>201509281205251_data-changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509281625216_data-changes-sinknode.resx">
+      <DependentUpon>201509281625216_data-changes-sinknode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509290905490_data-changes-routeupdate.resx">
+      <DependentUpon>201509290905490_data-changes-routeupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509291114241_initial312.resx">
+      <DependentUpon>201509291114241_initial312.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Switch.Core\Switch.Core.csproj">
+      <Project>{634981ea-d9c2-4e99-90b9-0ca4c822604c}</Project>
+      <Name>Switch.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\FluentNHibernate.dll" />
+    <Content Include="bin\Debug\Iesi.Collections.dll" />
+    <Content Include="bin\Debug\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Debug\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="bin\Debug\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Debug\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="bin\Debug\Microsoft.Owin.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.Security.Cookies.xml" />
+    <Content Include="bin\Debug\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.Security.OAuth.xml" />
+    <Content Include="bin\Debug\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Debug\Microsoft.Owin.xml" />
+    <Content Include="bin\Debug\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.ServiceLocation.pdb" />
+    <Content Include="bin\Debug\Microsoft.Practices.ServiceLocation.xml" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Configuration.xml" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.xml" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\NHibernate.ByteCode.Castle.dll" />
+    <Content Include="bin\Debug\NHibernate.dll" />
+    <Content Include="bin\Debug\NHibernate.Linq.dll" />
+    <Content Include="bin\Debug\Owin.dll" />
+    <Content Include="bin\Debug\Switch.Core.dll" />
+    <Content Include="bin\Debug\Switch.Core.pdb" />
+    <Content Include="bin\Debug\Switch.Data.dll" />
+    <Content Include="bin\Debug\Switch.Data.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

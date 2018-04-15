@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchProject", "SwitchProject\SwitchProject.csproj", "{C75EEDE3-BD57-411C-A864-BD99E4907D6A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{634981EA-D9C2-4E99-90B9-0CA4C822604C} = {634981EA-D9C2-4E99-90B9-0CA4C822604C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Core", "..\classicMovies\Project.Core\Project.Core.csproj", "{39D4587A-D73F-4DBD-887D-14AE92B058E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.Data", "Switch.Data\Switch.Data.csproj", "{C6452A3E-4693-4E3D-84A0-A37958BEDA31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.Service", "Switch.Service\Switch.Service.csproj", "{A9D24A46-9123-4DDC-9264-B43199273334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switch.Sink", "switch.Sink\switch.Sink.csproj", "{34A9DA8C-E746-49C3-9E22-1E3BE3AB8217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchSource", "SwitchSource\SwitchSource.csproj", "{B07ABABF-8F94-4623-88E2-1B939A3B5B45}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite1(1)", "http://localhost:2471", "{634DCEB9-53C5-4B01-98CD-4D463CB50C39}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{a9d24a46-9123-4ddc-9264-b43199273334}|Switch.Service.dll;{39D4587A-D73F-4DBD-887D-14AE92B058E9}|Project.Core.dll;{C6452A3E-4693-4E3D-84A0-A37958BEDA31}|Switch.Data.dll;{8347c25a-0fc4-4765-937d-d15a80ce0352}|Switch.UI.dll;{634981EA-D9C2-4E99-90B9-0CA4C822604C}|Switch.Core.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2471"
+		Debug.AspNetCompiler.PhysicalPath = "C:\Users\igunleinnovations\Documents\Visual Studio 2013\WebSites\WebSite1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2471\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2471"
+		Release.AspNetCompiler.PhysicalPath = "C:\Users\igunleinnovations\Documents\Visual Studio 2013\WebSites\WebSite1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2471\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "C:\Users\igunleinnovations\Documents\Visual Studio 2013\WebSites\WebSite1\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.UI", "Switch.UI\Switch.UI.csproj", "{8347C25A-0FC4-4765-937D-D15A80CE0352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch.Core", "Switch.Core\Switch.Core.csproj", "{634981EA-D9C2-4E99-90B9-0CA4C822604C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C75EEDE3-BD57-411C-A864-BD99E4907D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75EEDE3-BD57-411C-A864-BD99E4907D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75EEDE3-BD57-411C-A864-BD99E4907D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75EEDE3-BD57-411C-A864-BD99E4907D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D4587A-D73F-4DBD-887D-14AE92B058E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D4587A-D73F-4DBD-887D-14AE92B058E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D4587A-D73F-4DBD-887D-14AE92B058E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D4587A-D73F-4DBD-887D-14AE92B058E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6452A3E-4693-4E3D-84A0-A37958BEDA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6452A3E-4693-4E3D-84A0-A37958BEDA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6452A3E-4693-4E3D-84A0-A37958BEDA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6452A3E-4693-4E3D-84A0-A37958BEDA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D24A46-9123-4DDC-9264-B43199273334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D24A46-9123-4DDC-9264-B43199273334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D24A46-9123-4DDC-9264-B43199273334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D24A46-9123-4DDC-9264-B43199273334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34A9DA8C-E746-49C3-9E22-1E3BE3AB8217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A9DA8C-E746-49C3-9E22-1E3BE3AB8217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A9DA8C-E746-49C3-9E22-1E3BE3AB8217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A9DA8C-E746-49C3-9E22-1E3BE3AB8217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07ABABF-8F94-4623-88E2-1B939A3B5B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07ABABF-8F94-4623-88E2-1B939A3B5B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07ABABF-8F94-4623-88E2-1B939A3B5B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07ABABF-8F94-4623-88E2-1B939A3B5B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634DCEB9-53C5-4B01-98CD-4D463CB50C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634DCEB9-53C5-4B01-98CD-4D463CB50C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634DCEB9-53C5-4B01-98CD-4D463CB50C39}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{634DCEB9-53C5-4B01-98CD-4D463CB50C39}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8347C25A-0FC4-4765-937D-D15A80CE0352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8347C25A-0FC4-4765-937D-D15A80CE0352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8347C25A-0FC4-4765-937D-D15A80CE0352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8347C25A-0FC4-4765-937D-D15A80CE0352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634981EA-D9C2-4E99-90B9-0CA4C822604C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634981EA-D9C2-4E99-90B9-0CA4C822604C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634981EA-D9C2-4E99-90B9-0CA4C822604C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634981EA-D9C2-4E99-90B9-0CA4C822604C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
